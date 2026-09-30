@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>蛙漫 Waman · 国漫漫画在线阅读 - 蛙漫官网</title>
+<meta name="keywords" content="蛙漫,蛙漫官网,蛙漫网,waman,蛙漫漫画,蛙漫在线漫画,蛙漫漫画网,国漫漫画,漫画阅读">
+<meta name="description" content="蛙漫（Waman）官网——专注国漫漫画在线阅读的单页平台，收录热门连载、经典完结与原创漫画，支持移动端自适应阅读，登录蛙漫开启你的漫画之旅。">
+<link rel="canonical" href="https://waman-wap/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="author" content="蛙漫 Waman">
+<meta name="theme-color" content="#0d2818">
+<meta property="og:type" content="website">
+<meta property="og:title" content="蛙漫 Waman · 国漫漫画在线阅读官网">
+<meta property="og:description" content="蛙漫（Waman）专注国漫漫画在线阅读，热门连载、经典完结、原创漫画一页直达。">
+<meta property="og:url" content="https://waman-wap/">
+<meta property="og:site_name" content="蛙漫 Waman">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="蛙漫 Waman · 国漫漫画在线阅读官网">
+<meta name="twitter:description" content="蛙漫专注国漫漫画在线阅读，移动端自适应阅读体验。">
+
+<!-- 结构化数据：帮助必应收录识别站点主体与栏目 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "蛙漫 Waman",
+  "alternateName": ["蛙漫", "蛙漫官网", "蛙漫网"],
+  "url": "https://waman-wap/",
+  "description": "蛙漫（Waman）专注国漫漫画在线阅读，收录热门连载、经典完结与原创漫画，支持移动端自适应阅读。",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://waman-wap/#search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "蛙漫 Waman",
+  "url": "https://waman-wap/",
+  "logo": "https://waman-wap/favicon.ico",
+  "description": "蛙漫（Waman）漫画在线阅读平台，专注国漫与原创漫画内容分发。"
+}
+</script>
+
+<style>
+:root{
+  --green-900:#07291a;
+  --green-800:#0d3d28;
+  --green-600:#147a4f;
+  --green-500:#1c9d66;
+  --green-300:#7fd8ae;
+  --frog:#c8e643;
+  --gold:#ffcf5c;
+  --ink:#0a1f15;
+  --ink-2:#12382a;
+  --line:rgba(255,255,255,.10);
+  --line-2:rgba(255,255,255,.18);
+  --text:#e8f5ee;
+  --text-dim:#a8c9b8;
+  --radius:18px;
+  --shadow:0 18px 40px -18px rgba(0,0,0,.55);
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  background:var(--green-900);
+  color:var(--text);
+  line-height:1.7;
+  overflow-x:hidden;
+}
+body::before{
+  content:"";position:fixed;inset:0;z-index:-2;
+  background:
+    radial-gradient(900px 600px at 82% -8%,rgba(28,157,102,.40),transparent 60%),
+    radial-gradient(700px 500px at -6% 14%,rgba(127,216,174,.16),transparent 62%),
+    radial-gradient(600px 700px at 50% 108%,rgba(200,230,67,.10),transparent 60%),
+    linear-gradient(180deg,#062417 0%,#07291a 42%,#04160f 100%);
+}
+body::after{
+  content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.35;
+  background-image:radial-gradient(rgba(255,255,255,.05) 1px,transparent 1px);
+  background-size:26px 26px;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+.container{max-width:1180px;margin:0 auto;padding:0 20px}
+
+/* ============ 顶部 ============ */
+header{
+  position:sticky;top:0;z-index:80;
+  background:rgba(7,41,26,.86);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+.logo{display:flex;align-items:center;gap:11px;font-weight:800;font-size:20px;letter-spacing:.4px}
+.logo-mark{
+  width:38px;height:38px;border-radius:12px;flex:0 0 auto;
+  display:grid;place-items:center;font-size:21px;line-height:1;
+  background:linear-gradient(135deg,var(--frog),#7fc94a);
+  box-shadow:0 6px 16px -6px rgba(127,201,74,.7),inset 0 1px 0 rgba(255,255,255,.5);
+  position:relative;
+}
+.logo-mark::after{
+  content:"";position:absolute;width:8px;height:8px;border-radius:50%;
+  background:#2b3a12;top:11px;left:11px;box-shadow:14px 0 0 #2b3a12;
+}
+.logo span{color:var(--frog)}
+.logo small{display:block;font-size:10px;font-weight:600;letter-spacing:2px;color:var(--text-dim);text-transform:uppercase}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{
+  font-size:14.5px;font-weight:600;color:var(--text-dim);
+  padding:8px 12px;border-radius:10px;transition:.25s;
+}
+.nav a:hover{color:#fff;background:rgba(255,255,255,.07)}
+.nav-btn{
+  display:none;width:42px;height:42px;border-radius:11px;
+  border:1px solid var(--line-2);flex-direction:column;gap:5px;align-items:center;justify-content:center;
+}
+.nav-btn i{width:19px;height:2px;background:var(--text);border-radius:2px;display:block;transition:.3s}
+.search-box{
+  display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.07);
+  border:1px solid var(--line-2);border-radius:999px;padding:7px 14px;width:230px;
+}
+.search-box input{
+  flex:1;background:none;border:none;outline:none;color:var(--text);font-size:14px;min-width:0;
+}
+.search-box input::placeholder{color:var(--text-dim)}
+.search-box button{color:var(--green-300);font-size:15px}
+
+/* ============ 首屏 ============ */
+.hero{padding:74px 0 56px;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:54px;align-items:center}
+.tagline{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--green-300);background:rgba(127,216,174,.10);
+  border:1px solid rgba(127,216,174,.28);padding:6px 14px;border-radius:999px;margin-bottom:22px;
+}
+.tagline::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--frog);box-shadow:0 0 0 4px rgba(200,230,67,.18)}
+h1{
+  font-size:clamp(34px,5.2vw,58px);line-height:1.12;font-weight:900;letter-spacing:-.5px;
+}
+h1 em{font-style:normal;color:var(--frog);position:relative;white-space:nowrap}
+h1 em::after{
+  content:"";position:absolute;left:2%;right:2%;bottom:5px;height:12px;z-index:-1;
+  background:linear-gradient(90deg,rgba(28,157,102,.55),rgba(127,216,174,.25));
+  filter:blur(6px);border-radius:40%;
+}
+.hero p.lead{
+  margin-top:20px;font-size:16.5px;color:var(--text-dim);max-width:520px;
+}
+.hero-stats{display:flex;gap:36px;margin-top:32px;flex-wrap:wrap}
+.hero-stats div span{display:block;font-size:28px;font-weight:900;color:#fff;line-height:1.2}
+.hero-stats div small{font-size:12.5px;color:var(--text-dim);letter-spacing:.06em}
+.cta-row{display:flex;gap:12px;margin-top:34px;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:15px;
+  padding:14px 26px;border-radius:12px;transition:.25s;white-space:nowrap;
+}
+.btn-primary{
+  background:linear-gradient(135deg,var(--frog),#8ecf4a);color:#1a2a08;
+  box-shadow:0 12px 26px -10px rgba(127,201,74,.75);
+}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 18px 34px -12px rgba(127,201,74,.8)}
+.btn-ghost{border:1px solid var(--line-2);color:var(--text)}
+.btn-ghost:hover{background:rgba(255,255,255,.07);border-color:var(--green-300)}
+
+/* 荷叶卡片 */
+.lotus-wrap{position:relative;height:430px}
+.lotus{
+  position:absolute;border-radius:50%;display:grid;place-items:center;
+  background:radial-gradient(circle at 34% 30%,var(--green-500),var(--green-800) 70%);
+  box-shadow:var(--shadow),inset 0 2px 10px rgba(255,255,255,.18);
+}
+.lotus.l1{width:300px;height:300px;right:0;top:0;transform:rotate(-8deg)}
+.lotus.l2{width:150px;height:150px;right:210px;top:230px;background:radial-gradient(circle at 34% 30%,var(--gold),#c98a1f 70%)}
+.lotus.l3{width:110px;height:110px;right:-8px;top:250px;background:radial-gradient(circle at 34% 30%,#4fc98c,var(--green-600) 70%)}
+.lotus b{font-size:15px;font-weight:800;letter-spacing:.05em;color:#fff;text-align:center;line-height:1.45}
+.lotus small{display:block;font-size:10.5px;font-weight:600;letter-spacing:.18em;color:rgba(255,255,255,.72);text-transform:uppercase}
+.lily-pad{
+  position:absolute;border-radius:50%;background:var(--green-600);
+  box-shadow:inset 0 -10px 24px rgba(0,0,0,.28),0 14px 30px -16px rgba(0,0,0,.6);
+}
+.lily-pad::before{
+  content:"";position:absolute;inset:12% 42% 12% -22%;background:var(--green-600);
+  border-radius:50%;box-shadow:inset 0 -6px 14px rgba(0,0,0,.22);
+}
+.lp1{width:230px;height:96px;right:34px;top:336px;transform:rotate(-6deg)}
+.lp2{width:150px;height:66px;right:230px;top:392px;transform:rotate(16deg)}
+
+/* ============ 栏目通用 ============ */
+section{padding:64px 0;scroll-margin-top:70px}
+.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:34px;flex-wrap:wrap}
+.section-head h2{
+  font-size:clamp(24px,3vw,33px);font-weight:900;letter-spacing:-.3px;line-height:1.25;
+}
+.section-head h2 i{
+  font-style:normal;color:var(--green-300);font-size:13px;font-weight:800;
+  letter-spacing:.2em;text-transform:uppercase;display:block;margin-bottom:7px;
+}
+.section-head p{color:var(--text-dim);font-size:14.5px;max-width:360px}
+.section-head a.more{font-size:13.5px;font-weight:700;color:var(--green-300);white-space:nowrap}
+
+/* 漫画卡片网格 */
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{
+  background:rgba(255,255,255,.045);border:1px solid var(--line);
+  border-radius:var(--radius);overflow:hidden;transition:.28s;display:flex;flex-direction:column;
+}
+.card:hover{transform:translateY(-5px);border-color:rgba(127,216,174,.45);background:rgba(255,255,255,.07);box-shadow:var(--shadow)}
+.cover{
+  position:relative;aspect-ratio:3/4;overflow:hidden;
+  background:linear-gradient(150deg,var(--green-800),var(--green-600));
+}
+.cover::after{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(120% 90% at 50% 110%,rgba(0,0,0,.45),transparent 60%);
+}
+.cover .num{
+  position:absolute;left:12px;top:12px;z-index:2;font-size:11.5px;font-weight:800;
+  letter-spacing:.1em;color:#fff;background:rgba(0,0,0,.38);padding:4px 9px;border-radius:6px;backdrop-filter:blur(4px);
+}
+.cover .tag{
+  position:absolute;right:12px;top:12px;z-index:2;font-size:11.5px;font-weight:800;
+  color:#12381f;background:var(--frog);padding:4px 10px;border-radius:999px;
+}
+.cover .ico{position:absolute;inset:0;display:grid;place-items:center;font-size:62px;z-index:1}
+.card-body{padding:15px 16px 17px;flex:1;display:flex;flex-direction:column}
+.card-body h3{font-size:16.5px;font-weight:800;line-height:1.4}
+.card-body .meta{margin-top:8px;display:flex;gap:8px;flex-wrap:wrap}
+.card-body .meta b{
+  font-size:11.5px;font-weight:700;color:var(--green-300);
+  background:rgba(127,216,174,.12);border:1px solid rgba(127,216,174,.22);padding:3px 9px;border-radius:6px;
+}
+.card-body .desc{margin-top:10px;font-size:13px;color:var(--text-dim);line-height:1.6;flex:1}
+.card-foot{display:flex;align-items:center;justify-content:space-between;margin-top:13px;padding-top:12px;border-top:1px dashed var(--line)}
+.card-foot a{font-size:13.5px;font-weight:800;color:var(--frog);display:inline-flex;align-items:center;gap:5px}
+.card-foot a:hover{color:var(--green-300)}
+.card-foot span{font-size:12px;color:var(--text-dim)}
+
+/* ============ 频道切换 ============ */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.tab{
+  font-size:14px;font-weight:700;color:var(--text-dim);
+  padding:9px 18px;border-radius:999px;border:1px solid var(--line-2);transition:.25s;
+}
+.tab:hover{color:#fff}
+.tab.active{background:var(--green-500);color:#04160f;border-color:var(--green-500);box-shadow:0 8px 20px -8px rgba(28,157,102,.7)}
+.tab-panel{display:none}.tab-panel.active{display:block;animation:fade .35s ease}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+/* ============ 榜单 ============ */
+.rank{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:start}
+.rank-list{display:flex;flex-direction:column;gap:11px}
+.rank-item{
+  display:flex;align-items:center;gap:15px;padding:12px 14px;
+  background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:14px;transition:.25s;
+}
+.rank-item:hover{background:rgba(255,255,255,.08);border-color:rgba(127,216,174,.4);transform:translateX(4px)}
+.rank-no{
+  width:36px;height:36px;border-radius:10px;flex:0 0 auto;
+  display:grid;place-items:center;font-size:16px;font-weight:900;color:var(--text-dim);
+  background:rgba(255,255,255,.06);font-family:Georgia,serif;
+}
+.rank-item:nth-child(1) .rank-no{background:linear-gradient(135deg,#ffd86b,var(--gold));color:#4a3300}
+.rank-item:nth-child(2) .rank-no{background:linear-gradient(135deg,#e9eef2,#b8c4ce);color:#333}
+.rank-item:nth-child(3) .rank-no{background:linear-gradient(135deg,#f0b483,#d4813f);color:#3d230a}
+.rank-info{flex:1;min-width:0}
+.rank-info b{font-size:15.5px;font-weight:800;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rank-info small{font-size:12.5px;color:var(--text-dim)}
+.rank-val{font-size:12.5px;font-weight:800;color:var(--green-300);white-space:nowrap}
+.rank-side{
+  border-radius:var(--radius);padding:30px;position:relative;overflow:hidden;
+  background:linear-gradient(155deg,var(--green-600),var(--green-800));
+  border:1px solid rgba(127,216,174,.25);box-shadow:var(--shadow);
+}
+.rank-side::before{content:"蛙";position:absolute;right:-28px;bottom:-44px;font-size:190px;font-weight:900;color:rgba(255,255,255,.07);line-height:1}
+.rank-side h3{font-size:22px;font-weight:900}
+.rank-side p{font-size:14px;color:rgba(255,255,255,.82);margin-top:10px}
+.rank-side ul{list-style:none;margin-top:20px;display:flex;flex-direction:column;gap:11px}
+.rank-side li{display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,.9);align-items:flex-start}
+.rank-side li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--frog);margin-top:8px;flex:0 0 auto}
+
+/* ============ 资讯 ============ */
+.news-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:22px}
+.news-main{
+  border-radius:var(--radius);overflow:hidden;min-height:300px;position:relative;
+  background:linear-gradient(145deg,var(--green-600),var(--green-800));border:1px solid var(--line);
+}
+.news-main .ico{position:absolute;right:26px;bottom:20px;font-size:110px;opacity:.14}
+.news-main .txt{position:absolute;left:28px;right:28px;bottom:26px;z-index:2}
+.news-main .cat{font-size:11.5px;font-weight:800;letter-spacing:.16em;color:var(--frog);text-transform:uppercase}
+.news-main h3{font-size:23px;font-weight:900;margin-top:8px;line-height:1.4}
+.news-main p{font-size:13.5px;color:rgba(255,255,255,.82);margin-top:9px;max-width:520px}
+.news-list{display:flex;flex-direction:column;gap:12px}
+.news-item{
+  display:flex;gap:14px;padding:14px;border-radius:14px;
+  background:rgba(255,255,255,.04);border:1px solid var(--line);transition:.25s;align-items:flex-start;
+}
+.news-item:hover{background:rgba(255,255,255,.08);border-color:rgba(127,216,174,.4)}
+.news-item .date{
+  flex:0 0 auto;width:52px;text-align:center;padding:7px 0;border-radius:10px;
+  background:rgba(127,216,174,.10);border:1px solid rgba(127,216,174,.22);
+}
+.news-item .date b{display:block;font-size:19px;font-weight:900;color:#fff;line-height:1}
+.news-item .date small{font-size:10.5px;color:var(--green-300);letter-spacing:.08em}
+.news-item h4{font-size:15px;font-weight:800;line-height:1.45}
+.news-item p{font-size:12.5px;color:var(--text-dim);margin-top:5px;line-height:1.55}
+
+/* ============ 关于 ============ */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.about-art{position:relative;min-height:340px}
+.bubble{
+  position:absolute;border-radius:20px;padding:18px 20px;
+  background:rgba(255,255,255,.05);border:1px solid var(--line);backdrop-filter:blur(6px);
+  box-shadow:var(--shadow);
+}
+.bubble b{display:block;font-size:15px;font-weight:800}
+.bubble span{font-size:12.5px;color:var(--text-dim)}
+.b1{left:0;top:10px;width:230px}
+.b2{right:6px;top:96px;width:220px;border-color:rgba(127,216,174,.3)}
+.b3{left:34px;top:196px;width:250px}
+.b4{right:0;top:262px;width:180px}
+.about-art .ring{position:absolute;right:56px;top:30px;width:120px;height:120px;border-radius:50%;border:2px dashed rgba(127,216,174,.4);animation:spin 22s linear infinite}
+.about-art .ring2{position:absolute;left:150px;top:246px;width:70px;height:70px;border-radius:50%;border:2px dashed rgba(200,230,67,.45);animation:spin 16s linear infinite reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+.about-text h2{font-size:clamp(24px,3vw,32px);font-weight:900;line-height:1.3}
+.about-text h2 em{font-style:normal;color:var(--green-300)}
+.feat-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:26px}
+.feat{
+  padding:17px;border-radius:14px;background:rgba(255,255,255,.04);border:1px solid var(--line);transition:.25s;
+}
+.feat:hover{border-color:rgba(127,216,174,.4);background:rgba(255,255,255,.07)}
+.feat .ic{font-size:24px;display:block}
+.feat b{display:block;margin-top:9px;font-size:15px;font-weight:800}
+.feat span{font-size:12.5px;color:var(--text-dim);line-height:1.55}
+.about-text .btn{margin-top:30px}
+
+/* ============ 页脚 ============ */
+footer{border-top:1px solid var(--line);background:rgba(0,0,0,.22);padding:48px 0 26px;margin-top:24px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:34px}
+.foot-grid h5{font-size:14px;font-weight:800;margin-bottom:14px;letter-spacing:.06em}
+.foot-grid ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+.foot-grid a{font-size:13.5px;color:var(--text-dim);transition:.2s}
+.foot-grid a:hover{color:var(--green-300)}
+.foot-brand p{font-size:13.5px;color:var(--text-dim);margin-top:14px;max-width:300px}
+.foot-bottom{
+  margin-top:34px;padding-top:20px;border-top:1px solid var(--line);
+  display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+  font-size:12.5px;color:var(--text-dim);
+}
+.foot-bottom b{color:var(--green-300);font-weight:800}
+.seo-keywords{margin-top:18px;font-size:12px;color:var(--text-dim);line-height:1.9}
+.seo-keywords a{color:var(--text-dim)}
+.seo-keywords a:hover{color:var(--green-300)}
+.seo-keywords b{color:var(--text);font-weight:700}
+
+/* ============ 回到顶部 ============ */
+.top{
+  position:fixed;right:18px;bottom:24px;z-index:70;width:46px;height:46px;border-radius:14px;
+  background:var(--green-500);color:#04160f;display:none;place-items:center;font-size:19px;font-weight:900;
+  box-shadow:0 12px 26px -10px rgba(28,157,102,.7);transition:.25s;
+}
+.top.show{display:grid}
+.top:hover{transform:translateY(-3px)}
+
+/* ============ 响应式 ============ */
+@media (max-width:980px){
+  .hero-grid{grid-template-columns:1fr;gap:30px}
+  .lotus-wrap{height:320px;max-width:420px}
+  .grid{grid-template-columns:repeat(2,1fr);gap:15px}
+  .rank,.about,.news-grid{grid-template-columns:1fr;gap:24px}
+  .foot-grid{grid-template-columns:1fr 1fr;gap:26px}
+  .search-box{display:none}
+}
+@media (max-width:680px){
+  .container{padding:0 16px}
+  section{padding:46px 0}
+  .hero{padding:40px 0 30px}
+  .nav{position:fixed;left:0;right:0;top:64px;flex-direction:column;align-items:stretch;
+    padding:16px;background:rgba(6,36,23,.98);border-bottom:1px solid var(--line);gap:4px;
+    transform:translateY(-130%);opacity:0;transition:.3s;pointer-events:none}
+  .nav.open{transform:none;opacity:1;pointer-events:auto}
+  .nav a{padding:13px 14px;font-size:15.5px;border-radius:12px}
+  .nav-btn{display:flex}
+  .header-inner{height:58px}
+  .logo{font-size:17px}
+  .logo small{font-size:9px}
+  .grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .card-body{padding:12px 13px 14px}
+  .card-body h3{font-size:15px}
+  .cover .ico{font-size:46px}
+  .cover .num,.cover .tag{font-size:10.5px;padding:3px 7px}
+  .lotus-wrap{height:260px}
+  .lotus.l1{width:210px;height:210px}
+  .lotus.l2{width:110px;height:110px;right:150px;top:150px}
+  .lotus.l3{width:84px;height:84px;right:4px;top:172px}
+  .lily-pad{display:none}
+  .hero-stats{gap:22px}
+  .hero-stats div span{font-size:23px}
+  .btn{padding:12px 20px;font-size:14px;flex:1;justify-content:center}
+  .section-head{margin-bottom:22px}
+  .tabs{overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px;-webkit-overflow-scrolling:touch}
+  .tab{flex:0 0 auto;font-size:13px;padding:8px 15px}
+  .rank-side{padding:22px}
+  .news-main{min-height:230px}
+  .news-main .txt{left:18px;right:18px;bottom:18px}
+  .news-main h3{font-size:18px}
+  .feat-grid{grid-template-columns:1fr}
+  .about-art{min-height:250px}
+  .b1{width:170px}.b2{width:170px}.b3{width:190px}.b4{width:150px}
+  .foot-grid{grid-template-columns:1fr}
+  .foot-bottom{flex-direction:column}
+  .top{right:12px;bottom:16px;width:42px;height:42px}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= 顶部导航 ================= -->
+<header>
+  <div class="container header-inner">
+    <a href="https://waman-wap/" class="logo">
+      <span class="logo-mark"></span>
+      <span>蛙漫<small>WAMAN · 国漫在线阅读</small></span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#home">首页</a>
+      <a href="#rank">热门榜单</a>
+      <a href="#library">漫画库</a>
+      <a href="#news">资讯动态</a>
+      <a href="#about">关于蛙漫</a>
+    </nav>
+    <div class="search-box">
+      <input type="search" placeholder="搜索漫画名、作者、标签…" aria-label="搜索蛙漫漫画">
+      <button aria-label="搜索">&#128269;</button>
+    </div>
+    <button class="nav-btn" id="navBtn" aria-label="菜单"><i></i><i></i><i></i></button>
+  </div>
+</header>
+
+<!-- ================= Hero 首屏 ================= -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <span class="tagline">国漫原创 · 移动端自适应阅读</span>
+        <h1>登录 <em>蛙漫</em><br>开启你的漫画世界</h1>
+        <p class="lead">蛙漫（Waman）专注国漫漫画在线阅读，收录热门连载、经典完结与原创漫画，一页直达全部栏目，让每一次翻页都顺滑自然。</p>
+        <div class="hero-stats">
+          <div><span>12,000+</span><small>漫画作品</small></div>
+          <div><span>380+</span><small>内容分类</small></div>
+          <div><span>96%</span><small>读者满意度</small></div>
+        </div>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#library">立即阅读漫画 &#8594;</a>
+          <a class="btn btn-ghost" href="#about">了解蛙漫 &#8594;</a>
+        </div>
+      </div>
+      <div class="lotus-wrap" aria-hidden="true">
+        <div class="lotus l1"><b>蛙漫 Waman<br><small>WAMAN COMICS</small></b></div>
+        <div class="lotus l2"><b>国漫<br><small>原创精选</small></b></div>
+        <div class="lotus l3"><b>追更<br><small>每日更新</small></b></div>
+        <div class="lily-pad lp1"></div>
+        <div class="lily-pad lp2"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 栏目一：热门榜单 ================= -->
+<section id="rank">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2><i>RANKING</i>热门榜单 · 蛙漫阅读榜</h2>
+        <p>实时统计蛙漫站内阅读、收藏与追更数据，呈现当下最值得看的漫画。</p>
+      </div>
+      <a class="more" href="#">查看完整榜单 &#8594;</a>
+    </div>
+
+    <div class="rank">
+      <div class="rank-list">
+        <a class="rank-item" href="#">
+          <span class="rank-no">01</span>
+          <span class="rank-info"><b>青梧听雨</b><small>古风 · 连载中 · 128话</small></span>
+          <span class="rank-val">982万 人气</span>
+        </a>
+        <a class="rank-item" href="#">
+          <span class="rank-no">02</span>
+          <span class="rank-info"><b>机械之心：重启</b><small>科幻 · 连载中 · 64话</small></span>
+          <span class="rank-val">761万 人气</span>
+        </a>
+        <a class="rank-item" href="#">
+          <span class="rank-no">03</span>
+          <span class="rank-info"><b>山下有间茶铺</b><small>治愈 · 完结 · 32话</small></span>
+          <span class="rank-val">638万 人气</span>
+        </a>
+        <a class="rank-item" href="#">
+          <span class="rank-no">04</span>
+          <span class="rank-info"><b>夜行事务所</b><small>悬疑 · 连载中 · 91话</small></span>
+          <span class="rank-val">527万 人气</span>
+        </a>
+        <a class="rank-item" href="#">
+          <span class="rank-no">05</span>
+          <span class="rank-info"><b>山海异闻录</b><small>玄幻 · 连载中 · 156话</small></span>
+          <span class="rank-val">499万 人气</span>
+        </a>
+        <a class="rank-item" href="#">
+          <span class="rank-no">06</span>
+          <span class="rank-info"><b>她今天也在努力营业</b><small>都市 · 连载中 · 47话</small></span>
+          <span class="rank-val">413万 人气</span>
+        </a>
+        <a class="rank-item" href="#">
+          <span class="rank-no">07</span>
+          <span class="rank-info"><b>九曲镇魂歌</b><small>仙侠 · 连载中 · 73话</small></span>
+          <span class="rank-val">388万 人气</span>
+        </a>
+      </div>
+
+      <div class="rank-side">
+        <h3>为什么选择蛙漫？</h3>
+        <p>蛙漫把「发现好漫画」做成一件轻松的事——榜单、分类、更新提醒三位一体，帮你少翻页、多看画。</p>
+        <ul>
+          <li>每日更新，热门连载第一时间推送提醒</li>
+          <li>分题材频道，古风、科幻、悬疑、治愈一站找齐</li>
+          <li>移动端自适应排版，手机阅读不缩放不串行</li>
+          <li>支持离线缓存与阅读进度云同步</li>
+        </ul>
+        <a class="btn btn-primary" href="#library" style="margin-top:22px">浏览蛙漫漫画库 &#8594;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 栏目二：漫画库（频道切换） ================= -->
+<section id="library" style="background:rgba(0,0,0,.16);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2><i>COMICS LIBRARY</i>蛙漫漫画库</h2>
+        <p>按题材与更新状态筛选，快速定位你喜欢的漫画类型。</p>
+      </div>
+      <a class="more" href="#">全部作品 &#8594;</a>
+    </div>
+
+    <div class="tabs" role="tablist">
+      <button class="tab active" data-tab="all" role="tab">全部推荐</button>
+      <button class="tab" data-tab="hot" role="tab">热门连载</button>
+      <button class="tab" data-tab="end" role="tab">经典完结</button>
+      <button class="tab" data-tab="new" role="tab">本周新作</button>
+      <button class="tab" data-tab="org" role="tab">蛙漫原创</button>
+    </div>
+
+    <!-- 全部推荐 -->
+    <div class="tab-panel active" data-panel="all">
+      <div class="grid">
+        <a class="card" href="#">
+          <div class="cover"><span class="ico">&#127811;</span><span class="num">No.01</span><span class="tag">连载中</span></div>
+          <div class="card-body">
+            <h3>青梧听雨</h3>
+            <div class="meta"><b>古风</b><b>虐恋</b><b>VIP</b></div>
+            <p class="desc">一场春雨落在青梧镇，藏着两代人的恩怨。画风清丽，分镜细腻，蛙漫站内人气榜首之作。</p>
+            <div class="card-foot"><span>128话 · 982万阅读</span><span>阅读 &#8594;</span></div>
+          </div>
+        </a>
+        <a class="card" href="#">
+          <div class="cover"><span class="ico">&#129302;</span><span class="num">No.02</span><span class="tag">连载中</span></div>
+          <div class="card-body">
+            <h3>机械之心：重启</h3>
+            <div class="meta"><b>科幻</b><b>热血</b></div>
+            <p class="desc">末日废土之上，少女与一台旧型号机甲结伴启程。蛙漫科幻频道评分最高的连载作品。</p>
+            <div class="card-foot"><span>64话 · 761万阅读</span><span>阅读 &#8594;</span></div>
+          </div>
+        </a>
+        <a class="card" href="#">
+          <div class="cover"><span class="ico">&#9749;</span><span class="num">No.03</span><span class="tag">已完结</span></div>
+          <div class="card-body">
+            <h3>山下有间茶铺</h3>
+            <div class="meta"><b>治愈</b><b>日常</b><b>完结</b></div>
+            <p class="desc">山脚一间小茶铺，每个过路客都带着一个故事。适合睡前慢慢翻完的温暖短篇集。</p>
+            <div class="card-foot"><span>32话 · 完结可看</span><span>阅读 &#8594;</span></div>
+          </div>
+        </a>
+        <a class="card" href="#">
+          <div class="cover"><span class="ico">&#127757;</span><span class="num">No.04</span><span class="tag">连载中</span></div>
+          <div class="card-body">
+            <h3>山海异闻录</h3>
+            <div class="meta"><b>玄幻</b><b>冒险</b><b>VIP</b></div>
+            <p class="desc">以《山海经》为蓝本重构的国风奇幻长篇，蛙漫独家连载，每周三、周六双更。</p>
+            <div class="card-foot"><span>156话 · 499万阅读</span><span>阅读 &#8594;</span></div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- 热门连载 -->
+    <div class="tab-panel" data-panel="hot">
+      <div class="grid">
+        <a class="card" href="#">
+          <div class="cover"><span class="ico">&#128270;</span><span class="num">热</span><span class="tag">连载中</span></div>
+          <div class="card-body">
+            <h3>夜行事务所</h3>
+            <div class="meta"><b>悬疑</b><b>推理</b></div>
+            <p class="desc">只在深夜接单的事务所，破解一桩桩看似无解的都市怪谈。反转密度极高，追更体验拉满。</p>
+            <div class="card-foot"><span>91话 · 527万阅读</span><span>阅读 &#8594;</span></div>
+          </div>
+        </a>
+        <a class="card" href="#">
+          <div class="cover"><span class="ico">&#9876;&#65039;</span><span class="num">热</span><span class="tag">连载中</span></div>
+          <div class="card-body">
+            <h3>九曲镇魂歌</h3>
+            <div class="meta"><b>仙侠</b><b>动作</b></div>
+            <p class="desc">少年背负断剑出山，九曲黄河阵内，藏着一段被抹去的仙门旧事。</p>
+            <div class="card-foot"><span>73话 · 388万阅读</span><span>阅读 &#8594;</span></div>
+          </div>
+        </a>
+        <a class="card" href="#">
+          <div class="cover"><span class="ico">&#128104;&#8205;&#128105;</span><span class="num">热</span><span class="tag">连载中</span></div>
+          <div class="card-body">
+            <h3>她今天也在努力营业</h3>
+            <div class="meta"><b>都市</b><b>职场</b></div>
+            <p class="desc">小城咖啡店店长与转学少女的日常，轻甜但不腻，蛙漫都市频道口碑之选。</p>
+            <div class="card-foot"><span>47话 · 413万阅读</span><span>阅读 &#8594;</span></div>
+          </div>
+        </a>
+        <a class="card" href="#">
+          <div class="cover"><span class="ico">&#127800;</span><span class="num">热</span><span class="tag">连载中</span></div>
+          <div class="card-body">
+            <h3>长安不夜侯</h3>
+            <div class="meta"><b>历史</b><b>权谋</b><b>VIP</b></div>
+            <p class="desc">盛唐长安，灯火彻夜不熄。一场关于漕运与密信的风波正在酝酿。</p>
+            <div class="card-foot"><span>58话 · 365万阅读</span><span>阅读 &#8594;</span></div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- 经典完结 -->
+    <div class="tab-panel" data-panel="end">
+      <div class="grid">
+        <a class="card" href="#">
+          <div class="cover"><span class="ico">&#127881;</span><span class="num">完</span><span class="tag">已完结</span></div>
+          <div class="card-body">
+            <h3>纸鸢与少年</h3>
+            <div class="meta"><b>青春</b><b>校园</b><b>完结</b></div>
+            <p class="desc">一场关于约定与重逢的青春物语，全篇完结，适合一口气看完。</p>
+            <div class="card-foot"><span>26话 · 完结可看</span><span>阅读 &#8594;</span></div>
+          </div>
+        </a>
+        <a class="card" href="#">
+          <div class="cover"><span class="ico">&#127919;</span><span class="num">完</span><span class="tag">已完结</span></div>
+          <div class="card-body">
+            <h3>弓与蔷薇</h3>
+            <div class="meta"><b>奇幻</b><b>冒险</b><b>完结</b></div>
+            <p class="desc">游侠少女与落魄贵族的逃亡之旅，蛙漫评分 9.4 的完结长篇。</p>
+            <div class="card-foot"><span>112话 · 完结可看</span><span>阅读 &#8594;</span></div>
+          </div>
+        </a>
+        <a class="card" href="#">
+          <div class="cover"><span class="ico">&#127911;</span><span class="num">完</span><span class="tag">已完结</span></div>
+          <div class="card-body">
+            <h3>无声唱诗班</h3>
+            <div class="meta"><b>治愈</b><b>音乐</b><b>完结</b></div>
+            <p class="desc">一群失声的孩子，用画与手势组成了一支唱诗班。</p>
+            <div class="card-foot"><span>18话 · 完结可看</span><span>阅读 &#8594;</span></div>
+          </div>
+        </a>
+        <a class="card" href="#">
+          <div class="cover"><span class="ico">&#128167;</span><span class="num">完</span><span class="tag">已完结</span></div>
+          <div class="card-body">
+            <h3>潮汐之间</h3>
+            <div class="meta"><b>科幻</b><b>悬疑</b><b>完结</b></div>
+            <p class="desc">海平面上升后的海岛小镇，一个关于记忆与潮汐的完结短篇。</p>
+            <div class="card-foot"><span>41话 · 完结可看</span><span>阅读 &#8594;</span></div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- 本周新作 -->
+    <div class="tab-panel" data-panel="new">
+      <div class="grid">
+        <a class="card" href="#">
+          <div class="cover"><span class="ico">&#127752;</span><span class="num">新</span><span class="tag">本周新作</span></div>
+          <div class="card-body">
+            <h3>云间修表铺</h3>
+            <div class="meta"><b>治愈</b><b>奇幻</b></div>
+            <p class="desc">能修好时间的修表铺，第一位客人是位迷路的神明。</p>
+            <div class="card-foot"><span>3话 · 新作首发</span><span>阅读 &#8594;</span></div>
+          </div>
+        </a>
+        <a class="card" href="#">
+          <div class="cover"><span class="ico">&#129504;</span><span class="num">新</span><span class="tag">本周新作</span></div>
+          <div class="card-body">
+            <h3>火锅店里的魔法师</h3>
+            <div class="meta"><b>搞笑</b><b>美食</b></div>
+            <p class="desc">开在街角的火锅店，老板是个不太高明的魔法师。</p>
+            <div class="card-foot"><span>2话 · 新作首发</span><span>阅读 &#8594;</span></div>
+          </div>
+        </a>
+        <a class="card" href="#">
+          <div class="cover"><span class="ico">&#128296;</span><span class="num">新</span><span class="tag">本周新作</span></div>
+          <div class="card-body">
+            <h3>机巧少女不想加班</h3>
+          <div class="meta"><b>科幻</b><b>职场</b></div>
+          <p class="desc">蒸汽朋克世界观下的社畜喜剧，设定有趣、节奏明快。</p>
+          <div class="card-foot"><span>4话 · 新作首发</span><span>阅读 &#8594;</span></div>
+        </div>
+        </a>
+        <a class="card" href="#">
+          <div class="cover"><span class="ico">&#127934;&#65039;</span><span class="num">新</span><span class="tag">本周新作</span></div>
+          <div class="card-body">
+            <h3>棋手与他的影子</h3>
+            <div class="meta"><b>竞技</b><b>悬疑</b></div>
+            <p class="desc">一盘棋局牵出二十年前的对局，影子里藏着对手的执念。</p>
+            <div class="card-foot"><span>2话 · 新作首发</span><span>阅读 &#8594;</span></div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- 蛙漫原创 -->
+    <div class="tab-panel" data-panel="org">
+      <div class="grid">
+        <a class="card" href="#">
+          <div class="cover"><span class="ico">&#129412;</span><span class="num">原</span><span class="tag">蛙漫原创</span></div>
+          <div class="card-body">
+            <h3>蛙蛙漫游记</h3>
+            <div class="meta"><b>原创</b><b>搞笑</b><b>独家</b></div>
+            <p class="desc">蛙漫吉祥物蛙蛙的冒险连载，只在蛙漫平台独家发布。</p>
+            <div class="card-foot"><span>22话 · 独家</span><span>阅读 &#8594;</span></div>
+          </div>
+        </a>
+        <a class="card" href="#">
+          <div class="cover"><span class="ico">&#127797;</span><span class="num">原</span><span class="tag">蛙漫原创</span></div>
+          <div class="card-body">
+            <h3>池塘编年史</h3>
+            <div class="meta"><b>原创</b><b>治愈</b><b>独家</b></div>
+            <p class="desc">一片小池塘里的四季物语，蛙漫原创短篇系列。</p>
+            <div class="card-foot"><span>9话 · 独家</span><span>阅读 &#8594;</span></div>
+          </div>
+        </a>
+        <a class="card" href="#">
+          <div class="cover"><span class="ico">&#127800;</span><span class="num">原</span><span class="tag">蛙漫原创</span></div>
+          <div class="card-body">
+            <h3>花与蛙的契约</h3>
+            <div class="meta"><b>原创</b><b>奇幻</b><b>独家</b></div>
+            <p class="desc">蛙漫原创企划「花灵」系列首作，画风清新独特。</p>
+            <div class="card-foot"><span>14话 · 独家</span><span>阅读 &#8594;</span></div>
+          </div>
+        </a>
+        <a class="card" href="#">
+          <div class="cover"><span class="ico">&#127913;</span><span class="num">原</span><span class="tag">蛙漫原创</span></div>
+          <div class="card-body">
+            <h3>夜半蛙鸣电台</h3>
+            <div class="meta"><b>原创</b><b>单元剧</b><b>独家</b></div>
+            <p class="desc">每集一个独立故事，蛙漫原创的睡前单元剧系列。</p>
+            <div class="card-foot"><span>31话 · 独家</span><span>阅读 &#8594;</span></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 栏目三：资讯动态 ================= -->
+<section id="news">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2><i>NEWS &amp; UPDATES</i>资讯动态</h2>
+        <p>蛙漫官方更新公告、活动与行业观察，第一时间在这里发布。</p>
+      </div>
+      <a class="more" href="#">全部资讯 &#8594;</a>
+    </div>
+
+    <div class="news-grid">
+      <a class="news-main" href="#">
+        <span class="ico">&#128240;</span>
+        <div class="txt">
+          <span class="cat">官方公告</span>
+          <h3>蛙漫 2026 秋季内容计划公布：原创企划「花灵」系列正式启动</h3>
+          <p>本年度蛙漫将加大原创内容投入，首批 6 部原创漫画已陆续上线，并开放创作者投稿通道。</p>
+        </div>
+      </a>
+
+      <div class="news-list">
+        <a class="news-item" href="#">
+          <span class="date"><b>09</b><small>9月</small></span>
+          <span>
+            <h4>「热门榜单」算法升级，新增「追更速度」维度</h4>
+            <p>榜单将综合阅读、收藏、追更速度三项数据实时更新，每 6 小时刷新一次。</p>
+          </span>
+        </a>
+        <a class="news-item" href="#">
+          <span class="date"><b>05</b><small>9月</small></span>
+          <span>
+            <h4>移动端阅读器更新：支持双指缩放与分屏模式</h4>
+            <p>新版阅读器已全量上线，加载速度提升约 40%，弱网环境阅读更流畅。</p>
+          </span>
+        </a>
+        <a class="news-item" href="#">
+          <span class="date"><b>28</b><small>8月</small></span>
+          <span>
+            <h4>蛙漫创作者扶持计划第二期开放报名</h4>
+            <p>面向新人漫画家，提供稿费、流量与编辑一对一指导三重支持。</p>
+          </span>
+        </a>
+        <a class="news-item" href="#">
+          <span class="date"><b>20</b><small>8月</small></span>
+          <span>
+            <h4>《青梧听雨》动画化企划启动，蛙漫独家同步连载</h4>
+            <p>动画版预计于 2027 年上线，漫画主线将持续更新不断更。</p>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 栏目四：关于蛙漫 ================= -->
+<section id="about" style="background:rgba(0,0,0,.16);border-top:1px solid var(--line)">
+  <div class="container">
+    <div class="about">
+      <div class="about-art" aria-hidden="true">
+        <div class="bubble b1"><b>国漫精选</b><span>12,000+ 部作品持续更新</span></div>
+        <div class="bubble b2"><b>移动端优先</b><span>自适应排版，手机阅读更顺手</span></div>
+        <div class="bubble b3"><b>蛙漫原创</b><span>扶持新人漫画家，独家企划不断</span></div>
+        <div class="bubble b4"><b>安全阅读</b><span>青少年模式，安心追更</span></div>
+        <div class="ring"></div>
+        <div class="ring2"></div>
+      </div>
+
+      <div class="about-text">
+        <h2>关于 <em>蛙漫 Waman</em><br>把国漫漫画送到更多人手里</h2>
+        <p style="margin-top:16px;color:var(--text-dim);font-size:15px">蛙漫（Waman）是一个专注国漫漫画在线阅读的平台。我们相信好作品值得被看见，所以把选品、排版与阅读体验放在第一位——从热门连载到经典完结，从独家原创到新人投稿，蛙漫希望成为你每天打开的那一个漫画 App。</p>
+        <div class="feat-grid">
+          <div class="feat"><span class="ic">&#127912;</span><b>精选内容</b><span>编辑团队每周筛出值得看的新作</span></div>
+          <div class="feat"><span class="ic">&#128241;</span><b>移动优先</b><span>为手机阅读重新设计的排版体验</span></div>
+          <div class="feat"><span class="ic">&#128260;</span><b>进度同步</b><span>多设备登录，阅读进度实时跟随</span></div>
+          <div class="feat"><span class="ic">&#127919;</span><b>原创扶持</b><span>为新人漫画家提供稿费与流量支持</span></div>
+        </div>
+        <a class="btn btn-primary" href="https://waman-wap/">访问蛙漫官网 waman-wap &#8594;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 页脚 ================= -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="https://waman-wap/" class="logo">
+          <span class="logo-mark"></span>
+          <span>蛙漫<small>WAMAN · 国漫在线阅读</small></span>
+        </a>
+        <p>蛙漫（Waman）——专注国漫漫画在线阅读，登录蛙漫即可畅读热门连载、经典完结与原创漫画。</p>
+      </div>
+      <div>
+        <h5>栏目导航</h5>
+        <ul>
+          <li><a href="#home">首页</a></li>
+          <li><a href="#rank">热门榜单</a></li>
+          <li><a href="#library">漫画库</a></li>
+          <li><a href="#news">资讯动态</a></li>
+          <li><a href="#about">关于蛙漫</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>题材分类</h5>
+        <ul>
+          <li><a href="#">古风 / 仙侠</a></li>
+          <li><a href="#">科幻 / 悬疑</a></li>
+          <li><a href="#">治愈 / 日常</a></li>
+          <li><a href="#">搞笑 / 美食</a></li>
+          <li><a href="#">竞技 / 动作</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>蛙漫服务</h5>
+        <ul>
+          <li><a href="#">蛙漫原创投稿</a></li>
+          <li><a href="#">阅读器使用帮助</a></li>
+          <li><a href="#">青少年模式</a></li>
+          <li><a href="#">商务合作</a></li>
+          <li><a href="#">联系我们</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="seo-keywords">
+      <b>热门关键词：</b>
+      <a href="https://waman-wap/">蛙漫</a> · <a href="https://waman-wap/">蛙漫官网</a> · <a href="https://waman-wap/">蛙漫网</a> ·
+      <a href="https://waman-wap/">蛙漫漫画</a> · <a href="https://waman-wap/">蛙漫在线漫画</a> · <a href="https://waman-wap/">蛙漫漫画网</a> ·
+      <a href="https://waman-wap/">waman</a> · <a href="https://waman-wap/">waman-wap</a> · 国漫漫画在线阅读 · 漫画连载 · 蛙漫原创
+    </div>
+
+    <div class="foot-bottom">
+      <span>&copy; 2026 <b>蛙漫 Waman</b> · 网站网址：<b>https://waman-wap/</b> · 本站为单页演示站点，所有内页链接以 # 占位</span>
+      <span><b>蛙漫</b> · 国漫漫画在线阅读平台</span>
+    </div>
+  </div>
+</footer>
+
+<a class="top" id="top" href="#" aria-label="回到顶部">&#8593;</a>
+
+<script>
+// 移动端菜单
+(function(){
+  var btn=document.getElementById('navBtn'),nav=document.getElementById('nav');
+  btn.addEventListener('click',function(){nav.classList.toggle('open');});
+  nav.addEventListener('click',function(e){if(e.target.tagName==='A')nav.classList.remove('open');});
+})();
+
+// 频道切换
+(function(){
+  var tabs=document.querySelectorAll('.tab'),panels=document.querySelectorAll('.tab-panel');
+  tabs.forEach(function(t){
+    t.addEventListener('click',function(){
+      var k=t.getAttribute('data-tab');
+      tabs.forEach(function(x){x.classList.toggle('active',x===t);});
+      panels.forEach(function(p){p.classList.toggle('active',p.getAttribute('data-panel')===k);});
+    });
+  });
+})();
+
+// 回到顶部
+(function(){
+  var top=document.getElementById('top');
+  window.addEventListener('scroll',function(){
+    top.classList.toggle('show',window.scrollY>500);
+  });
+  top.addEventListener('click',function(e){e.preventDefault();window.scrollTo({top:0,behavior:'smooth'});});
+})();
+</script>
+
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+</body>
+</html>
